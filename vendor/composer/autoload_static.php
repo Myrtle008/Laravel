@@ -27,10 +27,10 @@ class ComposerStaticInit1efdb0198a1c96e724426a8bb3a36fc4
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
-        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -136,6 +136,7 @@ class ComposerStaticInit1efdb0198a1c96e724426a8bb3a36fc4
         ),
         'E' => 
         array (
+            'Encore\\Admin\\ApiTester\\' => 23,
             'Encore\\Admin\\' => 13,
             'Egulias\\EmailValidator\\' => 23,
         ),
@@ -363,6 +364,10 @@ class ComposerStaticInit1efdb0198a1c96e724426a8bb3a36fc4
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
+        'Encore\\Admin\\ApiTester\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-admin-ext/api-tester/src',
+        ),
         'Encore\\Admin\\' => 
         array (
             0 => __DIR__ . '/..' . '/encore/laravel-admin/src',
@@ -446,6 +451,10 @@ class ComposerStaticInit1efdb0198a1c96e724426a8bb3a36fc4
     );
 
     public static $classMap = array (
+        'App\\Admin\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Admin/Controllers/AuthController.php',
+        'App\\Admin\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Admin/Controllers/ExampleController.php',
+        'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',
+        'App\\Admin\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Admin/Controllers/UsersController.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -875,6 +884,11 @@ class ComposerStaticInit1efdb0198a1c96e724426a8bb3a36fc4
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/Warning.php',
         'Encore\\Admin\\Admin' => __DIR__ . '/..' . '/encore/laravel-admin/src/Admin.php',
         'Encore\\Admin\\AdminServiceProvider' => __DIR__ . '/..' . '/encore/laravel-admin/src/AdminServiceProvider.php',
+        'Encore\\Admin\\ApiTester\\ApiLogger' => __DIR__ . '/..' . '/laravel-admin-ext/api-tester/src/ApiLogger.php',
+        'Encore\\Admin\\ApiTester\\ApiTester' => __DIR__ . '/..' . '/laravel-admin-ext/api-tester/src/ApiTester.php',
+        'Encore\\Admin\\ApiTester\\ApiTesterController' => __DIR__ . '/..' . '/laravel-admin-ext/api-tester/src/ApiTesterController.php',
+        'Encore\\Admin\\ApiTester\\ApiTesterServiceProvider' => __DIR__ . '/..' . '/laravel-admin-ext/api-tester/src/ApiTesterServiceProvider.php',
+        'Encore\\Admin\\ApiTester\\BootExtension' => __DIR__ . '/..' . '/laravel-admin-ext/api-tester/src/BootExtension.php',
         'Encore\\Admin\\Auth\\Database\\AdminTablesSeeder' => __DIR__ . '/..' . '/encore/laravel-admin/src/Auth/Database/AdminTablesSeeder.php',
         'Encore\\Admin\\Auth\\Database\\Administrator' => __DIR__ . '/..' . '/encore/laravel-admin/src/Auth/Database/Administrator.php',
         'Encore\\Admin\\Auth\\Database\\HasPermissions' => __DIR__ . '/..' . '/encore/laravel-admin/src/Auth/Database/HasPermissions.php',
