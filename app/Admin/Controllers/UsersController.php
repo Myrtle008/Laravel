@@ -47,8 +47,7 @@ class UsersController extends Controller {
 	 */
 	public function edit($id, Content $content) {
 		return $content
-			->header('Edit')
-			->description('description')
+			->header('编辑')
 			->body($this->form()->edit($id));
 	}
 
@@ -60,8 +59,7 @@ class UsersController extends Controller {
 	 */
 	public function create(Content $content) {
 		return $content
-			->header('Create')
-			->description('description')
+			->header('新建用户')
 			->body($this->form());
 	}
 
@@ -91,13 +89,9 @@ class UsersController extends Controller {
 		$show = new Show(User::findOrFail($id));
 
 		$show->id('Id');
-		$show->name('Name');
-		$show->email('Email');
-		$show->email_verified_at('Email verified at');
-		$show->password('Password');
-		$show->remember_token('Remember token');
-		$show->created_at('Created at');
-		$show->updated_at('Updated at');
+		$show->name('姓名');
+		$show->email('邮箱');
+		$show->created_at('注册时间');
 
 		return $show;
 	}
